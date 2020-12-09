@@ -1,6 +1,9 @@
-export const getQuote = (cb) => {
-  setTimeout(
-    () => cb("No creas todo lo que leas en internet, por Benjamin Franklin"),
-    1000
-  );
+export const getQuote = () => {
+  return new Promise((resolve) => {
+    setTimeout(
+      () =>
+        resolve("No creas todo lo que leas en internet, por Benjamin Franklin"),
+      1000
+    );
+  });
 };
